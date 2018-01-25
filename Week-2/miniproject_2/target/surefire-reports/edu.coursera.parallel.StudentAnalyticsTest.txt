@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: edu.coursera.parallel.StudentAnalyticsTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 6.165 sec <<< FAILURE! - in edu.coursera.parallel.StudentAnalyticsTest
+testMostCommonFirstNameOfInactiveStudents(edu.coursera.parallel.StudentAnalyticsTest)  Time elapsed: 1.079 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+	at edu.coursera.parallel.StudentAnalytics.mostCommonFirstNameOfInactiveStudentsParallelStream(StudentAnalytics.java:123)
+	at edu.coursera.parallel.StudentAnalyticsTest.mostCommonFirstNameOfInactiveStudentsHelper(StudentAnalyticsTest.java:96)
+	at edu.coursera.parallel.StudentAnalyticsTest.testMostCommonFirstNameOfInactiveStudents(StudentAnalyticsTest.java:112)
+
+testMostCommonFirstNameOfInactiveStudentsPerf(edu.coursera.parallel.StudentAnalyticsTest)  Time elapsed: 2.367 sec  <<< ERROR!
+java.lang.UnsupportedOperationException
+	at edu.coursera.parallel.StudentAnalytics.mostCommonFirstNameOfInactiveStudentsParallelStream(StudentAnalytics.java:123)
+	at edu.coursera.parallel.StudentAnalyticsTest.mostCommonFirstNameOfInactiveStudentsHelper(StudentAnalyticsTest.java:96)
+	at edu.coursera.parallel.StudentAnalyticsTest.testMostCommonFirstNameOfInactiveStudentsPerf(StudentAnalyticsTest.java:120)
+
+testCountNumberOfFailedStudentsOlderThan20Perf(edu.coursera.parallel.StudentAnalyticsTest)  Time elapsed: 0.917 sec  <<< FAILURE!
+junit.framework.AssertionFailedError: Expected parallel version to run at least 1.2x faster but speedup was 0.6740088105726872
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at edu.coursera.parallel.StudentAnalyticsTest.testCountNumberOfFailedStudentsOlderThan20Perf(StudentAnalyticsTest.java:165)
+
