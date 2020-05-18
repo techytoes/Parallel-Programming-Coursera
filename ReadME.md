@@ -1,4 +1,6 @@
-# Parallel Programming in JAVA Coursera #
+## Parallel Programming in JAVA Coursera
+
+[![HitCount](http://hits.dwyl.com/techytoes/Parallel-Programming-Coursera.svg)](http://hits.dwyl.com/techytoes/Parallel-Programming-Coursera)
 
 This repository contains all the assignments and Quizzes submitted by me.
 
